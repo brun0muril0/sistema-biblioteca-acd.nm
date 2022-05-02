@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="600.0" style="-fx-background-color: #170113;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.PrincipalControllerAutor">
+   <children>
+      <Button fx:id="btNovo" layoutX="41.0" layoutY="301.0" mnemonicParsing="false" onAction="#handlerNovoAutor" style="-fx-background-color: #ecbee4;" text="Novo" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btAlterar" layoutX="114.0" layoutY="301.0" mnemonicParsing="false" onAction="#handlerAlterarAutor" style="-fx-background-color: #ecbee4;" text="Alterar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btExcluir" layoutX="502.0" layoutY="301.0" mnemonicParsing="false" onAction="#handlerExcluirAutor" style="-fx-background-color: #ecbee4;" text="Excluir" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <ListView fx:id="lwAutores" layoutX="37.0" layoutY="78.0" prefHeight="200.0" prefWidth="527.0" style="-fx-background-color: #ecbee4;" />
+      <Button fx:id="btPesquisarAutor" layoutX="483.0" layoutY="43.0" mnemonicParsing="false" onAction="#handlerPesquisar" style="-fx-background-color: #ecbee4;" text="Pesquisar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="tfPesquisaAutor" layoutX="193.0" layoutY="42.0" prefHeight="25.0" prefWidth="285.0" style="-fx-background-color: #ecbee4;" />
+      <Label fx:id="lbPesquisaAutor" layoutX="37.0" layoutY="41.0" prefHeight="25.0" prefWidth="154.0" style="-fx-border-color: #ecbee4; -fx-border-radius: 3px;" text="Digite o nome do autor:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="1.0" left="3.0" right="3.0" top="1.0" />
+         </padding></Label>
+   </children>
+</Pane>

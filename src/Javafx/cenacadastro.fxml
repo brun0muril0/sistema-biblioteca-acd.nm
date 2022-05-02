@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="428.0" style="-fx-background-color: #170113;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.CadastroController">
+   <children>
+      <TextField fx:id="tfTitulo" layoutX="82.0" layoutY="71.0" prefHeight="25.0" prefWidth="322.0" style="-fx-background-color: #ecbee4;" />
+      <Button fx:id="btCadastrar" layoutX="83.0" layoutY="356.0" mnemonicParsing="false" onAction="#handlerCadastrarLivro" style="-fx-background-color: #ecbee4;" text="Cadastrar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="tfIsbn" layoutX="204.0" layoutY="111.0" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ecbee4;" />
+      <TextField fx:id="tfEdicao" layoutX="83.0" layoutY="111.0" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #ecbee4;" />
+      <Label fx:id="lbTitulo" layoutX="41.0" layoutY="73.0" text="Título:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lbIsbn" layoutX="167.0" layoutY="115.0" text="ISBN:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lbEdicao" layoutX="34.0" layoutY="111.0" text="Edição:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lbAutor" layoutX="22.0" layoutY="149.0" text="Autoresr:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lbDescricao" layoutX="14.0" layoutY="253.0" text="Descrição:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tfDescricao" layoutX="83.0" layoutY="254.0" prefHeight="93.0" prefWidth="322.0" style="-fx-background-color: #ecbee4;" />
+      <ListView fx:id="lvAutores" layoutX="83.0" layoutY="149.0" prefHeight="93.0" prefWidth="322.0" style="-fx-background-color: #ecbee4;" />
+      <Label layoutX="135.0" layoutY="21.0" style="-fx-border-color: #ecbee4; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-alignment: center;" text="Cadastrar Livros" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btCancelar" layoutX="325.0" layoutY="356.0" mnemonicParsing="false" onAction="#handlerCancelarNovoLivro" style="-fx-background-color: #ecbee4;" text="Cancelar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #170113;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.PrincipalControllerLivro">
+   <children>
+      <Button fx:id="btDelete" layoutX="520.0" layoutY="314.0" mnemonicParsing="false" onAction="#handlerDelete" style="-fx-background-color: #ecbee4;" text="Deletar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btPesquisa" layoutX="498.0" layoutY="58.0" mnemonicParsing="false" onAction="#handlerPesquisar" prefHeight="24.0" prefWidth="82.0" style="-fx-background-color: #ecbee4; -fx-alignment: left;" text="Pesquisar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <Label fx:id="lbDigiteNome" layoutX="24.0" layoutY="57.0" prefHeight="25.0" prefWidth="160.0" style="-fx-border-color: #ecbee4; -fx-alignment: center; -fx-border-radius: 3px;" text="Digíte o nome do Livro:" textFill="#ecbee4">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="2.0" left="3.0" right="3.0" top="1.0" />
+         </padding></Label>
+      <TextField fx:id="tfPesquisa" layoutX="185.0" layoutY="57.0" prefHeight="25.0" prefWidth="308.0" style="-fx-background-color: #ecbee4;" />
+      <ListView fx:id="lvPesquisa" layoutX="26.0" layoutY="100.0" onMouseClicked="#selectedRow" prefHeight="200.0" prefWidth="554.0" style="-fx-background-color: #ecbee4;" />
+      <Button fx:id="btAlterar" layoutX="86.0" layoutY="314.0" mnemonicParsing="false" onAction="#handlerPrincipalAlterar" style="-fx-background-color: #ecbee4;" text="Alterar" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btNovo" layoutX="24.0" layoutY="314.0" mnemonicParsing="false" onAction="#handlerCadastrarLivro" style="-fx-background-color: #ecbee4;" text="Novo" textFill="#170113">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="1.0" right="1.0" top="3.0" />
+   </padding>
+</Pane>

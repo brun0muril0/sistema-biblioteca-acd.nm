@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.DeleteController">
+   <children>
+      <Button fx:id="btDelete" layoutX="519.0" layoutY="314.0" mnemonicParsing="false" onAction="#handlerDelete" text="Deletar" />
+      <Button fx:id="btPesquisa" layoutX="513.0" layoutY="57.0" mnemonicParsing="false" onAction="#handlerPesquisar" text="Pesquisar" />
+      <Label fx:id="lbDigiteNome" layoutX="24.0" layoutY="60.0" text="Digíte o nome do Livro:" />
+      <TextField fx:id="tfPesquisa" layoutX="152.0" layoutY="57.0" prefHeight="25.0" prefWidth="349.0" />
+      <ListView fx:id="lvPesquisa" layoutX="26.0" layoutY="100.0" onMouseClicked="#selectedRow" prefHeight="200.0" prefWidth="554.0" />
+   </children>
+</Pane>
